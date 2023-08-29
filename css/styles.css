@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(206, 113, 26);
+}
+
+.icono {
+    font-size: 30px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.mainNav .mainNav__lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mainNav__item {
+    margin-right: 50px;
+}
+
+.mainNav__link {
+    font-size: 20px;
+    transition: .2s all ease-in-out;
+}
+
+.mainNav__link:hover {
+    color: #a8a8a8;
+    transition: .2s all ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#button-cart {
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+
+#button-cart:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(225, 76, 65);
+}
+
+#button-cart:focus {
+    outline: none;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 0px;
+}
+
+.card {
+    border: 0px;
+    width: 18rem;
+}
+
+.card img {
+    width: 100%;
+    margin: 0;
+}
+.modal-content {
+    min-width: 500px;
+}
+
+.modal-content .price-product {
+    padding-top: 10px;
+
+}
+
+.productInCart {
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+}
+
+.productInCart:hover {
+    border-left: 5px solid rgb(225, 76, 65);
+}
+
+.button-remove {
+    color: red;
+    border: none;
+    font-size: 20px;
+    background-color: white;
+}
+
+.boton-remove:hover {
+    cursor: pointer;
+}
+
+.boton-remove:focus {
+    outline: none;
+}
+
+h1 {
+    color: black;
+    font-size: 23px;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+footer {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-color: black;
+}
+
+.card-title {
+    font-weight: normal;
+    font-size: 17px;
+    font-weight: 600;
+    color: #3C4858;
+}
+
+.card-text {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.card-title,
+.card-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0px;
+}
+
+.redesSociales {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.navbar-light .navbar-brand {
+    font-family: 'Comforter Brush', cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: rgb(204, 204, 204);
+}
+
+footer {
+    color: white;
+    font-size: 24px;
+}
+
+.copyright {
+    color: white;
+}
+
+footer .display-flex {
+    justify-content: space-between;
+}
+
+@media (min-width: 300px) {
+    h1 {
+        text-align: center;
+    }
+
+    .catalogo {
+        grid-template-columns: auto;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .catalogo {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .display-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .catalogo {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+.card button {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    font-size: 14px;
+}
+
+.fa-chevron-left {
+    display: block;
+    font-size: 24px;
+    font-weight: 900;
+    width: 45px;
+    height: 60px;
+    padding: 18px 10px;
+    background-color: #2983BC;
+    color: #fff;
+    border: none;
+    border-color: #2983BC;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.fa-chevron-right {
+    font-size: 24px;
+    width: 45px;
+    height: 60px;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #2983BC;
+    border-color: #2983BC;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
